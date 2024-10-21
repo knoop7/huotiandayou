@@ -1,0 +1,40 @@
+{
+  "config": {
+    "title": "选项",
+    "step": {
+      "user": {
+        "title": "首次设置",
+        "description": "\n选择对话模式，根据需求选择对话模式。\n支持显示 AI 名称，隐藏名称或详细内容显示。\n",
+        "data": {
+          "name": "名称",
+          "conversation_mode": "对话模式"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "仅允许单个配置条目。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "备用对话选项",
+        "data": {
+          "primary_agent": "主要代理",
+          "fallback_agent": "备用代理",
+          "secondary_fallback_agent": "次要备用代理",
+          "conversation_mode": "对话模式"
+        }
+      }
+    }
+  },
+  "selector": {
+    "conversation_mode": {
+      "options": {
+        "no_name": "不显示名称",
+        "add_name": "显示AI名称（推荐）",
+        "detailed": "详细显示内容（不推荐）"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "config": {
+    "title": "Options",
+    "step": {
+      "user": {
+        "title": "Initial Setup",
+        "description": "\nSelect the conversation mode according to your needs.\nSupports displaying AI name, hiding the name, or showing detailed content.\n",
+        "data": {
+          "name": "Name",
+          "conversation_mode": "Conversation Mode"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Only a single configuration entry is allowed."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Fallback Conversation Options",
+        "data": {
+          "primary_agent": "Primary Agent",
+          "fallback_agent": "Fallback Agent",
+          "secondary_fallback_agent": "Secondary Fallback Agent",
+          "conversation_mode": "Conversation Mode"
+        }
+      }
+    }
+  },
+  "selector": {
+    "conversation_mode": {
+      "options": {
+        "no_name": "Do not display name",
+        "add_name": "Display AI name (recommended)",
+        "detailed": "Detailed content display (not recommended)"
+      }
+    }
+  }
+}
