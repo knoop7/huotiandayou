@@ -23,11 +23,6 @@
 
 ##
 
-<div align="center">
-
-
-
-</div>
 
 
 
@@ -40,15 +35,18 @@ https://github.com/knoop7/HuoTianDaYou
 
 - 或者下载本地
 通过 HACS（默认存储）安装或通过将文件复制到新的"custom_components/huotiandayou"目录中来手动安装。
-- 集成页面搜索添加"火天大有" [![Install quickly via a HACS link](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=knoop7&repository=huotiandayoupe&category=integration)
+
+###
+
+- 集成页面搜索添加"火天大有"
+### [![Install quickly via a HACS link](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=knoop7&repository=huotiandayoupe&category=integration)
 
 
 
 
 ###
 
-- 安装之后即可快速配置
-默认建议选择推荐属性（可以更改这霸气的名字）
+- 安装之后即可快速配置，默认建议选择推荐属性（可以更改这霸气的名字）
 
 
 ### 高级用法
