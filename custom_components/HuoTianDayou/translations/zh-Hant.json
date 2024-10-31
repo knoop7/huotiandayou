@@ -1,0 +1,40 @@
+{
+  "config": {
+    "title": "選項",
+    "step": {
+      "user": {
+        "title": "首次設置",
+        "description": "\n歡迎使用本整合！\n本整合旨在聚合管理您的AI實體\n\n**使用指南：**\n支援所有經 Home Assistant 認證的對話實體\n您可以新增任何自定義相關的三種對話實體\n\n\n**注意事項：**\n我們不生產AI，不增加系統內存\n未來也不會在工具中添加其他聯網方式\n\n\n如果您已瞭解差不多了\n\n接下來，可以修改整合名稱\n修改完成後，點擊提交進入下一步操作\n",
+        "data": {
+          "name": "整合名稱"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "僅允許單一配置項目。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "對話選項",
+        "data": {
+          "primary_agent": "首要 AI 實體",
+          "fallback_agent": "備用 AI 實體",
+          "secondary_fallback_agent": "次要備用 AI 實體（可選）",
+          "conversation_mode": "對話模式",
+          "error_responses": "可填寫失敗過濾欄位\n"
+        }
+      }
+    }
+  },
+  "selector": {
+    "conversation_mode": {
+      "options": {
+        "no_name": "不顯示名稱",
+        "add_name": "顯示AI名稱（推薦）",
+        "detailed": "顯示詳細內容（不推薦）"
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "config": {
+    "title": "首次设置",
+    "step": {
+      "user": {
+        "title": "首次设置",
+        "description": "\n欢迎使用本集成！\n本集成旨在聚合管理您的AI实体\n\n**使用指南：**\n所有经 Home Assistant 认证的对话实体均支持\n您可以添加任何自定义相关的任何其三种对话实体\n\n\n**注意事项：** \n我们不生产AI，不徒增系统内存\n也未来不会工具中添加其他联网方式\n\n\n既然您了解差不多了\n\n接下来，可以修改集成名称\n修改完成后，点击提交进入下一步操作\n",
+        "data": {
+          "name": "集成名称"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "仅允许单个配置条目。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "对话配置",
+        "description": "配置您的对话助手\n\n**首选默认建议选择 Home Assistant 实体**\n**次要选择，任意其注册到系统中智能对话实体**\n**二级可以作为次要选择的再次转发**\n\n如果不想选择\n可以点击后面选项后面（X）\n以此取消配置这项\n",
+        "data": {
+          "primary_agent": "首要 AI 实体",
+          "fallback_agent": "后备 AI 实体",
+          "secondary_fallback_agent": "二级后备 AI 实体（可选）",
+          "enable_speaker": "音箱播报功能",
+          "conversation_mode": "对话模式",
+          "error_responses": "错误过滤字段",
+          "error_responses_description": "用于过滤AI无意义回复"
+        }
+      },
+      "speaker": {
+        "title": "继续设置",
+        "description": "请选择音箱设备（仅支持小米音箱）",
+        "data": {
+          "speaker_entity": "当前设备",
+          "no_speakers": "未检测到可用的小米音箱设备"
+        }
+      }
+    },
+    "error": {
+      "invalid_conversation_mode": "对话模式选择无效",
+      "invalid_error_responses": "错误过滤字段格式错误",
+      "invalid_speaker": "音箱设备选择无效"
+    }
+  },
+  "selector": {
+    "primary_agent": {
+      "label": "首要 AI 实体",
+      "description": "选择首选对话助手AI"
+    },
+    "fallback_agent": {
+      "label": "后备 AI 实体",
+      "description": "选择后备对话助手AI"
+    },
+    "secondary_fallback_agent": {
+      "label": "二级后备 AI 实体（可选）",
+      "description": "选择第三优先级的对话助手AI"
+    },
+    "conversation_mode": {
+      "label": "显示模式",
+      "description": "选择AI回复的显示格式",
+      "options": {
+        "no_name": "不显示名称",
+        "add_name": "显示AI名称（推荐）",
+        "detailed": "详细显示内容（不推荐）"
+      }
+    },
+    "speaker_type": {
+      "label": "音箱设备",
+      "description": "请选择音箱设备（仅支持小米音箱）"
+    }
+  }
+}

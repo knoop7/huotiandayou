@@ -1,0 +1,40 @@
+{
+  "config": {
+    "title": "Options",
+    "step": {
+      "user": {
+        "title": "Initial Setup",
+        "description": "\nWelcome to this integration!\nThis integration is designed to centralize and manage your AI entities.\n\n**User Guide:**\nAll Home Assistant-certified conversation entities are supported.\nYou may add any of the three types of custom conversation entities as needed.\n\n\n**Note:**\nWe do not create AI, nor increase system memory usage.\nFuture updates will also avoid adding any additional network connections.\n\n\nIf you're ready,\n\nYou can proceed to modify the integration name.\nOnce done, click submit to continue to the next step.\n",
+        "data": {
+          "name": "Integration Name"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Only one configuration entry is allowed."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Conversation Options",
+        "data": {
+          "primary_agent": "Primary AI Entity",
+          "fallback_agent": "Fallback AI Entity",
+          "secondary_fallback_agent": "Secondary Fallback AI Entity (Optional)",
+          "conversation_mode": "Conversation Mode",
+          "error_responses": "Error Filtering Fields (Enter failure filtering keywords)"
+        }
+      }
+    }
+  },
+  "selector": {
+    "conversation_mode": {
+      "options": {
+        "no_name": "Do not display name",
+        "add_name": "Display AI Name (Recommended)",
+        "detailed": "Display detailed content (Not Recommended)"
+      }
+    }
+  }
+}
